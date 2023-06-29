@@ -2,14 +2,121 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="./css/responsive.css">
         <title>Mi portafolio</title>
     </head>
     <body>
-        <header>
-            
-        </header>
+        <!-- navbar para pantallas por encima de los 768px -->
+        <nav class="nav nav--oscuro nav--l">
+            <div class="nav__enlaces">
+                <!-- <a href="#" class="nav__enlaces__enlace">Sobre m&iacute;</a> -->
+                <a href="#tecnologias" class="nav__enlaces__enlace">Tecnolog&iacute;as que manejo</a>
+                <a href="#proyectos" class="nav__enlaces__enlace">Mis proyectos</a>
+                <a href="#contacto" class="nav__enlaces__enlace">Contacto</a>
+            </div>
+        </nav>
+        <!-- navbar para pantallas por debajo de los 768px -->
+        <nav class="nav nav--oscuro nav--s">
+            <div class="nav__boton" id="boton"></div>
+            <div class="nav__enlaces nav__enlaces--oculto" id="enlaces">
+                <!-- <a href="#" class="nav__enlaces__enlace">Sobre m&iacute;</a> -->
+                <a href="#tecnologias" class="nav__enlaces__enlace">Tecnolog&iacute;as que manejo</a>
+                <a href="#proyectos" class="nav__enlaces__enlace">Mis proyectos</a>
+                <a href="#contacto" class="nav__enlaces__enlace">Contacto</a>
+            </div>
+        </nav>
         <main>
-            <h1>Mi portafolio</h1>
+            <h1 class="titulo texto-centrado">Mi portafolio</h1>
+            <div class="fotografia">
+                (Aqu&iacute; va mi fotograf&iacute;a)
+            </div>
+            <p class="nombre texto-centrado">Edel Guereca</p>
+            <p class="texto-centrado">Desarrollador web</p>
+            <h2 class="subtitulo texto-centrado" id="tecnologias">Tecnolog&iacute;as que manejo</h2>
+            <div class="contenedor contenedor--renglon justify-center align-items-center">
+                <div class="contenedor__imagen">
+                    <!-- HTML5 -->
+                    <img src="./img/html.svg" alt="HTML5">
+                </div>
+                <div class="contenedor__imagen">
+                    <!-- CSS3 -->
+                    <img src="./img/css.svg" alt="CSS3">
+                </div>
+                <div class="contenedor__imagen">
+                    <!-- JavaScript -->
+                    <img src="./img/js.svg" alt="Javascript">
+                </div>
+                <div class="contenedor__imagen">
+                    <!-- Bootstrap 5 -->
+                    <img src="./img/bootstrap.svg" alt="Bootstrap5">
+                </div>
+                <div class="contenedor__imagen">
+                    <!-- Tailwind CSS -->
+                    <img src="./img/tailwindcss.svg" alt="TailwindCSS">
+                </div>
+                <div class="contenedor__imagen">
+                    <!-- Python -->
+                    <img src="./img/python.svg" alt="Python">
+                </div>
+                <div class="contenedor__imagen">
+                    <!-- Django -->
+                    <img src="./img/django.svg" alt="Django">
+                </div>
+                <div class="contenedor__imagen">
+                    <!-- Node.js -->
+                    <img src="./img/nodejs.svg" alt="Node.js">
+                </div>
+                <div class="contenedor__imagen">
+                    <!-- React -->
+                    <img src="./img/react.svg" alt="React">
+                </div>
+                <div class="contenedor__imagen">
+                    <!-- MongoDB -->
+                    <img src="./img/mongodb.svg" alt="MongoDB">
+                </div>
+            </div>
+            <h2 class="subtitulo texto-centrado" id="proyectos">Mis proyectos</h2>
+            <p class="parrafo texto-justificado">
+                A continuaci&oacute;n, te muestro mis proyectos que hasta la fecha he realizado
+                (sólo repositorio. En producci&oacute;n pr&oacute;ximamente).
+                Ten en cuenta que esta lista, así como la lista de tecnolog&iacute;as que manejo
+                se ir&aacute; actualizando a lo largo de mi carrera profesional.
+            </p>
+            <div class="contenedor contenedor--evenly" id="proyectos">
+                <div class="tarjeta">
+                    <p class="tarjeta__titulo">CRUD Estudiantes</p>
+                    <p class="tarjeta__parrafo texto-justificado">
+                        Aplicaci&oacute;n web CRUD usando c&oacute;digo nativo (HTML, CSS, JS) y Node.js,
+                        Express.js y MongoDB como BackEnd.
+                    </p>
+                    <div class="tarjeta__pie">
+                        <a href="https://github.com/eddygurod1102/CRUD-Estudiantes" class="tarjeta__pie__enlace" target="_blank">Ver</a>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <p class="tarjeta__titulo">EntrenamientosApp</p>
+                    <p class="tarjeta__parrafo texto-justificado">
+                        Aplicaci&oacute;n para la planificaci&oacute;n y control de microciclos
+                        (semanas de entrenamiento) usando Django y Bootstrap.
+                    </p>
+                    <div class="tarjeta__pie">
+                        <a href="https://github.com/eddygurod1102/entrenamientos-app" class="tarjeta__pie__enlace" target="_blank">Ver</a>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <p class="tarjeta__titulo">NoticiasApp</p>
+                    <p class="tarjeta__parrafo texto-justificado">
+                        Sitio web b&aacute;sico CRUD. Uso de stack MERN y TailwindCSS.
+                    </p>
+                    <div class="tarjeta__pie">
+                        <a href="https://github.com/eddygurod1102/NoticiasApp" class="tarjeta__pie__enlace" target="_blank">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="subtitulo texto-centrado" id="contacto">Contacto</h2>
+            <p class="parrafo texto-justificado">Cont&aacute;ctame en mis redes sociales:</p>
         </main>
+        <script src="./js/script.js"></script>
     </body>
 </html>
